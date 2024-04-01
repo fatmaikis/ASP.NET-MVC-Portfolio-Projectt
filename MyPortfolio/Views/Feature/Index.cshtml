@@ -1,0 +1,41 @@
+﻿@model List<MyPortfolio.Models.TblFeatures>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+
+}
+
+<br />
+<h3>Öne Çıkarılan Sayfası</h3>
+
+<table class=" table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Ad Soyad</th>
+        <th>Pozisyon</th>
+        <th>Image Url</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+
+        <tr>
+            <td>@count</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Title</td>
+            <td><img src="@item.ImageUrl" style="width:40px; height:40px;" /></td>
+            <td><a href="/Feature/DeleteFeature/@item.FeatureID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Feature/UpdateFeature/@item.FeatureID" class="btn btn-outline-info">Güncelle</a></td>
+
+        </tr>
+    }
+
+
+</table>
+<br />
+<a href="/Feature/AddFeature" class="btn btn-outline-primary">Yeni Öne Çıkarılan Ekle</a>

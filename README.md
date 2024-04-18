@@ -1,5 +1,5 @@
 # MyAcademyPortfolioProject
-<b> M&Y Yazılım Eğitim Akademi Danışmanlık bünyesinde Erhan Gündüz hocamızın eğitmenliği Murat Yücedağ hocamızın mentörlüğünde ilk projem olan Mvc ile Porfolio sitesi geliştirme projesini tamamladım.</b>
+<b> M&Y Yazılım Eğitim Akademi Danışmanlık bünyesinde Erhan Gündüz hocamızın eğitmenliği Murat Yücedağ hocamızın mentorluğunda ilk projem olan Mvc ile Portfolio sitesi geliştirme projesini tamamladım.</b>
 <br/>
 <b>Bu projede ;</b>
 <br/>
